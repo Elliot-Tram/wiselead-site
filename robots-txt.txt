@@ -1,0 +1,43 @@
+# Robots.txt pour Wiselead.fr
+# https://wiselead.fr/
+
+# Règles générales
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.well-known/
+Disallow: /401
+Disallow: /404
+
+# Optimisation pour les moteurs de recherche principaux
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloquer les mauvais bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap
+Sitemap: https://wiselead.fr/sitemap.xml
+
+# Éviter l'indexation des fichiers sensibles
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.config$
+Disallow: /package.json
+Disallow: /vercel.json
